@@ -10,6 +10,7 @@ class Tree():
 
     def ask_value(self, attribute):
         value = float(input('Por favor digite o valor de {}: '.format(attribute)))
+
         return value
 
     def decision(self):
@@ -20,47 +21,63 @@ class Tree():
                 if sqft_living <= 1075.0:
                     if price <= 227775.0:
                         if sqft_living <= 735.0:
-                            return "Caro"
+                            return "Classificação final da casa: Cara"
+
                         else:  # if self.sqft_living > 735.0
-                            return "Barato"
+                            return "Classificação final da casa: Barata"
+
                     else:  # if self.price > 227775.0
-                        return "Caro"
+                        return "Classificação final da casa: Cara"
+
                 else:  # if self.sqft_living > 1075.0
-                    return "Barato"
+                    return "Classificação final da casa: Barata"
+
             else:  # if self.price > 270500.0
                 sqft_lot = self.ask_value('sqft_lot')
                 if sqft_lot <= 1263.0:
                     if sqft_living <= 1255.0:
-                        return "Caro"
+                        return "Classificação final da casa: Cara"
+
                     else:  # if self.sqft_living > 1255.0
-                        return "Barato"
+                        return "Classificação final da casa: Barata"
+
                 else:  # if self.sqft_lot > 1263.0
                     if sqft_lot <= 17688.0:
-                        return "Caro"
+                        return "Classificação final da casa: Cara"
+
                     else:  # if self.sqft_lot > 17688.0
-                        return "Barato"
+                        return "Classificação final da casa: Barata"
+
         else:  # if self.sqft_living > 1405.0
             price = self.ask_value('price')
             if price <= 332500.0:
-                return "Barato"
+                return "Classificação final da casa: Barata"
+
             else:  # if self.price > 332500.0
                 if sqft_living <= 1700.0:
                     if price <= 355450.0:
                         if sqft_living <= 1470.0:
-                            return "Caro"
+                            return "Classificação final da casa: Cara"
+
                         else:  # if self.sqft_living > 1470.0
-                            return "Barato"
+                            return "Classificação final da casa: Barata"
+
                     else:  # if self.price > 355450.0
                         sqft_basement = self.ask_value('sqft_basement')
                         if sqft_basement <= 630.0:
-                            return "Caro"
+                            return "Classificação final da casa: Cara"
+
                         else:  # if self.sqft_basement > 630.0
-                            return "Medio"
+                            return "Classificação final da casa: Media"
+
                 else:  # if self.sqft_living > 1700.0
                     if price <= 431500.0:
-                        return "Barato"
+                        return "Classificação final da casa: Barata"
+
                     else:  # if self.price > 431500.0
                         if sqft_living <= 2160.0:
-                            return "Caro"
+                            return "Classificação final da casa: Cara"
+
                         else:  # if self.sqft_living > 2160.0
-                            return "Barato"
+                            return "Classificação final da casa: Barata"
+

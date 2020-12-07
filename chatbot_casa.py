@@ -4,9 +4,9 @@ t = Tree()
 continua = None
 erro = 0
 while continua != "2":
-    print("_____________________________________________________\n")
+    print("___________________________________________________________________\n")
     print("Chatbot de estimativa de preços ofertados por casas no CEP 98106 \n")
-    print("_____________________________________________________\n")
+    print("___________________________________________________________________\n")
     continua = input("Fazer estimativa? (1 para sim, 2 para não)\n")
     if continua == "1":
         print(t.decision())
